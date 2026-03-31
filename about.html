@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us — MALSA Corporation Sdn. Bhd.</title>
+<meta name="description" content="Learn about MALSA Corporation Sdn. Bhd. — our history, vision, mission, and leadership in Sabah's palm oil industry.">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{palm:{50:'#faf7f2',100:'#f3ede2',200:'#e6d9c3',300:'#d4be9c',400:'#c0a074',500:'#b08a57',600:'#a3764b',700:'#885f3f',800:'#6e4d38',900:'#5b4030',950:'#312118'},forest:{50:'#f0f7f1',100:'#dcebde',200:'#bbd8c0',300:'#8dbd97',400:'#5d9d6b',500:'#3d8050',600:'#2c663e',700:'#245233',800:'#1f422a',900:'#1a3724',950:'#0d1f14'},soil:{50:'#faf6f1',100:'#f0e8db',200:'#e0cfb5',300:'#ccb088',400:'#bb9464',500:'#af804e',600:'#9e6c42',700:'#835538',800:'#6b4633',900:'#583b2c',950:'#301d16'}},fontFamily:{heading:['"Playfair Display"','Georgia','serif'],body:['"Source Sans 3"','sans-serif']}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-palm-50 text-palm-950 font-body antialiased">
+
+<!-- NAV (same as index) -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 nav-glass transition-all duration-300"><div class="max-w-7xl mx-auto px-6 lg:px-10"><div class="flex items-center justify-between h-16 lg:h-20">
+<a href="index.html" class="flex items-center gap-3 group"><img src="malsa_logo.png" alt="MALSA Logo" class="w-14 h-14 object-contain"><div><div class="font-heading font-bold text-[#2C663E] text-xl leading-tight tracking-tight">MALSA</div><div class="text-[11px] tracking-[0.15em] text-[#8B7355] uppercase font-semibold">Corporation Sdn. Bhd.</div></div></a>
+<div class="hidden lg:flex items-center gap-1"><a href="index.html" class="px-4 py-2 text-sm font-semibold text-palm-700 hover:text-[#8B7355] hover:bg-[#F5F0E8] rounded-lg transition-all"><span data-i18n="nav_home">Home</span></a><a href="about.html" class="px-4 py-2 text-sm font-semibold text-[#8B7355] hover:text-[#B8A07A] hover:bg-forest-50 rounded-lg transition-all"><span data-i18n="nav_about">About Us</span></a><a href="operations.html" class="px-4 py-2 text-sm font-semibold text-palm-700 hover:text-[#8B7355] hover:bg-[#F5F0E8] rounded-lg transition-all"><span data-i18n="nav_ops">Operations</span></a><a href="sustainability.html" class="px-4 py-2 text-sm font-semibold text-palm-700 hover:text-[#8B7355] hover:bg-[#F5F0E8] rounded-lg transition-all"><span data-i18n="nav_sustain">Sustainability</span></a><a href="contact.html" class="px-4 py-2 text-sm font-semibold text-palm-700 hover:text-[#8B7355] hover:bg-[#F5F0E8] rounded-lg transition-all"><span data-i18n="nav_contact">Contact</span></a><a href="careers.html" class="px-4 py-2 text-sm font-semibold text-palm-700 hover:text-[#8B7355] hover:bg-[#F5F0E8] rounded-lg transition-all"><span data-i18n="nav_careers">Careers</span></a></div>
+<div class="flex items-center gap-3"><button id="langToggle" onclick="toggleLang()" class="flex items-center gap-1.5 px-3 py-1.5 bg-palm-100 hover:bg-palm-200 rounded-full text-xs font-bold text-palm-800 transition-all border border-palm-200"><span id="langFlag">🇬🇧</span><span id="langLabel">EN</span></button><button onclick="toggleMenu()" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-lg hover:bg-palm-100"><svg class="w-5 h-5 text-palm-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg></button></div>
+</div></div></nav>
+<div id="mobileMenu" class="mobile-menu fixed inset-0 z-[60] bg-palm-50"><div class="flex items-center justify-between px-6 h-16"><div class="font-heading font-bold text-forest-900 text-lg">MALSA</div><button onclick="toggleMenu()" class="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-palm-100"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M6 18L18 6M6 6l12 12"/></svg></button></div><div class="flex flex-col px-8 pt-8 gap-2"><a href="index.html" class="text-2xl font-heading font-semibold text-palm-800 py-3 border-b border-palm-200">Home</a><a href="about.html" class="text-2xl font-heading font-semibold text-[#8B7355] py-3 border-b border-palm-200">About Us</a><a href="operations.html" class="text-2xl font-heading font-semibold text-palm-800 py-3 border-b border-palm-200">Operations</a><a href="sustainability.html" class="text-2xl font-heading font-semibold text-palm-800 py-3 border-b border-palm-200">Sustainability</a><a href="contact.html" class="text-2xl font-heading font-semibold text-palm-800 py-3 border-b border-palm-200">Contact</a><a href="careers.html" class="text-2xl font-heading font-semibold text-palm-800 py-3" data-i18n="nav_careers">Careers</a></div></div>
+
+<!-- PAGE HERO -->
+<section class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 bg-[#2D2418] text-white overflow-hidden grain">
+<div class="absolute inset-0 bg-gradient-to-br from-[#1A1510] via-[#2D2418] to-[#3D3225] opacity-90"></div>
+<div class="absolute top-0 right-0 w-[500px] h-[500px] bg-[#6B5B45] rounded-full blur-3xl opacity-10 translate-x-1/3 -translate-y-1/3"></div>
+<div class="relative max-w-7xl mx-auto px-6 lg:px-10">
+<div class="flex items-center gap-3 mb-4"><div class="w-12 h-[1px] bg-[#B8A07A]"></div><span class="text-[#C4B08A] text-sm font-semibold tracking-[0.25em] uppercase" data-i18n="about_eyebrow">Who We Are</span></div>
+<h1 class="font-heading text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4" data-i18n="about_hero_title">About MALSA Corporation</h1>
+<p class="text-forest-200 text-lg max-w-xl" data-i18n="about_hero_sub">Our story, our people, our commitment to Sabah's palm oil industry.</p>
+</div>
+</section>
+
+<!-- OUR STORY -->
+<section class="py-20 lg:py-28 bg-palm-50">
+<div class="max-w-7xl mx-auto px-6 lg:px-10">
+<div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+<div data-aos="fade-right">
+<div class="aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-[#E8DCC8] to-[#D4C4A8] shadow-xl relative">
+<div class="absolute inset-0 flex items-center justify-center"><div class="text-center p-8 bg-white/60 backdrop-blur-sm rounded-xl"><svg class="w-12 h-12 mx-auto text-[#9E8A6A] mb-3" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg><p class="text-[#6B5B45] font-semibold text-sm">Insert image</p><p class="text-[#7A6B55] text-xs mt-1"></p></div></div>
+</div>
+</div>
+<div data-aos="fade-left">
+<h2 class="font-heading text-3xl lg:text-4xl font-bold text-[#3D3225] leading-tight mb-6" data-i18n="about_story_title">Our Story</h2>
+<p class="text-palm-700 leading-relaxed mb-4" data-i18n="about_story_p1">MALSA Corporation Sdn. Bhd. is a Malaysia-based plantation company principally engaged in upstream palm oil activities, with operations centred in Sandakan, Sabah. Our core business covers the full cycle of oil palm cultivation — from field upkeep and crop husbandry to harvesting, agronomic management, and yield optimisation.</p>
+<p class="text-palm-700 leading-relaxed mb-4" data-i18n="about_story_p2">Beyond cultivation, we operate our own palm oil mill — Malsa POM — at Man Choon Estate, KM 7 Jalan Beluran, processing FFB from our estates, third-party plantations, dealers, and smallholders. This vertical integration from field to mill ensures quality control and supply reliability.</p>
+<p class="text-palm-700 leading-relaxed">Our strategic positioning is oriented toward sustaining stable production volumes, managing input cost volatility, ensuring operational continuity during seasonal cycles, and maintaining supply reliability for downstream buyers such as refiners, traders, and manufacturers — including IOI Corporation and Mewah Group.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- VISION & MISSION -->
+<section class="py-20 lg:py-28 bg-white">
+<div class="max-w-7xl mx-auto px-6 lg:px-10">
+<div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+<div class="bg-forest-50 rounded-2xl p-8 lg:p-10 border border-[#D4C4A8]" data-aos="fade-up">
+<div class="w-14 h-14 bg-[#8B7355] rounded-xl flex items-center justify-center mb-6">
+<svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+</div>
+<h3 class="font-heading text-2xl font-bold text-[#3D3225] mb-4" data-i18n="about_vision_title">Our Vision</h3>
+<p class="text-palm-700 leading-relaxed" data-i18n="about_vision_text">To be a leading and sustainable upstream palm oil company in Sabah, recognised for operational excellence, community partnership, and environmental responsibility.</p>
+</div>
+<div class="bg-soil-50 rounded-2xl p-8 lg:p-10 border border-soil-200" data-aos="fade-up" data-aos-delay="150">
+<div class="w-14 h-14 bg-soil-600 rounded-xl flex items-center justify-center mb-6">
+<svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+</div>
+<h3 class="font-heading text-2xl font-bold text-[#3D3225] mb-4" data-i18n="about_mission_title">Our Mission</h3>
+<p class="text-palm-700 leading-relaxed" data-i18n="about_mission_text">To cultivate and process palm oil with integrity, maximise yields through best agricultural practices, maintain full traceability, support local communities, and deliver reliable supply to our downstream partners.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CORE VALUES -->
+<section class="py-20 lg:py-28 bg-palm-50">
+<div class="max-w-7xl mx-auto px-6 lg:px-10">
+<div class="text-center mb-16" data-aos="fade-up"><h2 class="font-heading text-3xl lg:text-4xl font-bold text-[#3D3225] mb-4" data-i18n="values_core_title">Our Core Values</h2><p class="text-palm-600 max-w-lg mx-auto" data-i18n="values_core_sub">The principles that guide every decision we make — from the field to the boardroom.</p></div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white rounded-2xl p-6 border border-palm-200 card-lift" data-aos="fade-up"><div class="w-11 h-11 bg-[#F0E8DB] rounded-xl flex items-center justify-center mb-4"><svg class="w-5 h-5 text-[#8B7355]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z"/></svg></div><h4 class="font-heading font-bold text-lg text-[#3D3225] mb-2" data-i18n="core_integrity">Integrity</h4><p class="text-palm-600 text-sm leading-relaxed" data-i18n="core_integrity_d">We conduct our business with honesty and transparency, honouring our commitments to partners, employees, and the communities we serve.</p></div>
+<div class="bg-white rounded-2xl p-6 border border-palm-200 card-lift" data-aos="fade-up" data-aos-delay="100"><div class="w-11 h-11 bg-[#F0E8DB] rounded-xl flex items-center justify-center mb-4"><svg class="w-5 h-5 text-[#8B7355]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg></div><h4 class="font-heading font-bold text-lg text-[#3D3225] mb-2" data-i18n="core_efficiency">Efficiency</h4><p class="text-palm-600 text-sm leading-relaxed" data-i18n="core_efficiency_d">From agronomic practices to mill operations and budget management, we work to improve productivity and reduce waste at every level.</p></div>
+<div class="bg-white rounded-2xl p-6 border border-palm-200 card-lift" data-aos="fade-up" data-aos-delay="200"><div class="w-11 h-11 bg-[#F0E8DB] rounded-xl flex items-center justify-center mb-4"><svg class="w-5 h-5 text-[#8B7355]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/></svg></div><h4 class="font-heading font-bold text-lg text-[#3D3225] mb-2" data-i18n="core_partnership">Partnership</h4><p class="text-palm-600 text-sm leading-relaxed" data-i18n="core_partnership_d">We value strong relationships — with our workers, smallholders, dealers, and downstream partners like IOI and Mewah who depend on our reliable supply.</p></div>
+<div class="bg-white rounded-2xl p-6 border border-palm-200 card-lift" data-aos="fade-up" data-aos-delay="0"><div class="w-11 h-11 bg-[#F0E8DB] rounded-xl flex items-center justify-center mb-4"><svg class="w-5 h-5 text-[#8B7355]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg></div><h4 class="font-heading font-bold text-lg text-[#3D3225] mb-2" data-i18n="core_safety">Safety</h4><p class="text-palm-600 text-sm leading-relaxed" data-i18n="core_safety_d">The health and safety of our workforce is a top priority. We enforce strict safety protocols across all estate and mill operations.</p></div>
+<div class="bg-white rounded-2xl p-6 border border-palm-200 card-lift" data-aos="fade-up" data-aos-delay="100"><div class="w-11 h-11 bg-[#F0E8DB] rounded-xl flex items-center justify-center mb-4"><svg class="w-5 h-5 text-[#8B7355]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5a17.92 17.92 0 01-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/></svg></div><h4 class="font-heading font-bold text-lg text-[#3D3225] mb-2" data-i18n="core_sustain">Sustainability</h4><p class="text-palm-600 text-sm leading-relaxed" data-i18n="core_sustain_d">We are committed to balancing economic performance with environmental stewardship, ensuring our operations protect the natural heritage of Sabah.</p></div>
+<div class="bg-white rounded-2xl p-6 border border-palm-200 card-lift" data-aos="fade-up" data-aos-delay="200"><div class="w-11 h-11 bg-[#F0E8DB] rounded-xl flex items-center justify-center mb-4"><svg class="w-5 h-5 text-[#8B7355]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"/></svg></div><h4 class="font-heading font-bold text-lg text-[#3D3225] mb-2" data-i18n="core_growth">Growth</h4><p class="text-palm-600 text-sm leading-relaxed" data-i18n="core_growth_d">We invest in our people, our infrastructure, and our processes to ensure MALSA Corporation continues to grow and create value for generations to come.</p></div>
+</div>
+</div>
+</section>
+
+<!-- LEADERSHIP TEAM -->
+<section class="py-20 lg:py-28 bg-white">
+<div class="max-w-7xl mx-auto px-6 lg:px-10">
+<div class="text-center mb-16" data-aos="fade-up"><h2 class="font-heading text-3xl lg:text-4xl font-bold text-[#3D3225] mb-4" data-i18n="leadership_title">Leadership</h2><p class="text-palm-600 max-w-lg mx-auto" data-i18n="leadership_sub">The people driving MALSA Corporation forward.</p></div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
+<div class="text-center" data-aos="fade-up">
+<div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-[#E8DCC8] to-[#D4C4A8] flex items-center justify-center mb-4 border-4 border-white shadow-lg"><svg class="w-12 h-12 text-forest-500" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0"/></svg></div>
+<h4 class="font-heading font-bold text-lg text-forest-900">[ Name ]</h4>
+<p class="text-palm-500 text-sm font-medium">Managing Director</p>
+<p class="text-palm-400 text-xs mt-1">Insert photo</p>
+</div>
+<div class="text-center" data-aos="fade-up" data-aos-delay="100">
+<div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-soil-200 to-soil-300 flex items-center justify-center mb-4 border-4 border-white shadow-lg"><svg class="w-12 h-12 text-soil-500" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0"/></svg></div>
+<h4 class="font-heading font-bold text-lg text-forest-900">[ Name ]</h4>
+<p class="text-palm-500 text-sm font-medium">Operations Manager</p>
+<p class="text-palm-400 text-xs mt-1">Insert photo</p>
+</div>
+<div class="text-center" data-aos="fade-up" data-aos-delay="200">
+<div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-forest-200 to-soil-200 flex items-center justify-center mb-4 border-4 border-white shadow-lg"><svg class="w-12 h-12 text-forest-500" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0"/></svg></div>
+<h4 class="font-heading font-bold text-lg text-forest-900">[ Name ]</h4>
+<p class="text-palm-500 text-sm font-medium">Mill Manager</p>
+<p class="text-palm-400 text-xs mt-1">Insert photo</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- GALLERY PREVIEW -->
+<section class="py-20 lg:py-28 bg-palm-50">
+<div class="max-w-7xl mx-auto px-6 lg:px-10">
+<div class="text-center mb-12" data-aos="fade-up"><h2 class="font-heading text-3xl lg:text-4xl font-bold text-[#3D3225] mb-4" data-i18n="gallery_title">Gallery</h2><p class="text-palm-600" data-i18n="gallery_sub">A glimpse of our operations and people.</p></div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+<div class="aspect-square rounded-xl bg-gradient-to-br from-[#E8DCC8] to-[#D4C4A8] flex items-center justify-center" data-aos="fade-up"><div class="text-center"><p class="text-forest-600 text-xs font-semibold">Insert image</p></div></div>
+<div class="aspect-square rounded-xl bg-gradient-to-br from-soil-200 to-soil-300 flex items-center justify-center" data-aos="fade-up" data-aos-delay="50"><div class="text-center"><p class="text-soil-600 text-xs font-semibold">Insert image</p></div></div>
+<div class="aspect-square rounded-xl bg-gradient-to-br from-forest-200 to-soil-200 flex items-center justify-center" data-aos="fade-up" data-aos-delay="100"><div class="text-center"><p class="text-forest-600 text-xs font-semibold">Insert image</p></div></div>
+<div class="aspect-square rounded-xl bg-gradient-to-br from-palm-200 to-palm-300 flex items-center justify-center" data-aos="fade-up" data-aos-delay="150"><div class="text-center"><p class="text-palm-600 text-xs font-semibold">Insert image</p></div></div>
+<div class="aspect-square rounded-xl bg-gradient-to-br from-[#C4B08A] to-[#B8A07A] flex items-center justify-center" data-aos="fade-up" data-aos-delay="200"><div class="text-center"><p class="text-[#6B5B45] text-xs font-semibold">Insert image</p></div></div>
+<div class="aspect-square rounded-xl bg-gradient-to-br from-[#CCBB9A] to-[#B8A07A] flex items-center justify-center" data-aos="fade-up" data-aos-delay="250"><div class="text-center"><p class="text-soil-700 text-xs font-semibold">Insert image</p></div></div>
+<div class="aspect-square rounded-xl bg-gradient-to-br from-forest-200 to-palm-200 flex items-center justify-center" data-aos="fade-up" data-aos-delay="300"><div class="text-center"><p class="text-forest-600 text-xs font-semibold">Insert image</p></div></div>
+<div class="aspect-square rounded-xl bg-gradient-to-br from-palm-300 to-soil-300 flex items-center justify-center" data-aos="fade-up" data-aos-delay="350"><div class="text-center"><p class="text-palm-700 text-xs font-semibold">Insert image</p></div></div>
+</div>
+</div>
+</section>
+
+<!-- FOOTER (same as index) -->
+<footer class="bg-[#1A1510] text-[#C4B08A] pt-16 pb-8"><div class="max-w-7xl mx-auto px-6 lg:px-10"><div class="grid md:grid-cols-3 gap-12 mb-12"><div><div class="flex items-center gap-3 mb-4"><img src="malsa_logo.png" alt="MALSA Logo" class="w-12 h-12 object-contain"><div><div class="font-heading font-bold text-[#C4B08A] text-lg">MALSA Corporation</div><div class="text-[11px] tracking-[0.12em] text-[#9E8A6A] uppercase">Sdn. Bhd.</div></div></div><p class="text-[#C4B08A] text-sm leading-relaxed" data-i18n="footer_desc">Upstream palm oil cultivation, estate management, and FFB milling operations based in Sandakan, Sabah, Malaysia.</p></div><div><h4 class="font-heading font-bold text-[#E8DCC8] mb-4" data-i18n="footer_links">Quick Links</h4><ul class="space-y-2 text-sm"><li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li><li><a href="operations.html" class="hover:text-white transition-colors">Operations</a></li><li><a href="sustainability.html" class="hover:text-white transition-colors">Sustainability</a></li><li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li><li><a href="careers.html" class="hover:text-white transition-colors">Careers</a></li></ul></div><div><h4 class="font-heading font-bold text-[#E8DCC8] mb-4" data-i18n="footer_contact">Contact Us</h4><div class="space-y-3 text-sm"><div class="flex items-start gap-2"><svg class="w-4 h-4 mt-0.5 text-[#9E8A6A] flex-shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg><span>Lot 3-4, Block 37, Bandar Indah,<br>Mile 4, Jalan Utara,<br>90000 Sandakan, Sabah</span></div><div class="flex items-center gap-2"><svg class="w-4 h-4 text-[#9E8A6A] flex-shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg><span>+60 89-518 466</span></div></div></div></div><div class="border-t border-[#3D3225] pt-6 flex flex-col sm:flex-row items-center justify-between gap-4"><p class="text-[#8B7355] text-xs">© 2026 MALSA Corporation Sdn. Bhd. All rights reserved.</p><p class="text-[#7A6B55] text-xs">Developed by <span class="text-[#C4B08A] font-semibold">Leomark Marcus</span></p></div></div></footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="lang.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
